@@ -22,20 +22,22 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(253, 101, 133, 1) 0%,
-    rgba(255, 211, 165, 1) 90%
-  );
+  background-image: linear-gradient(
+          135deg,
+          rgb(124, 0, 0) 0%,
+          rgb(179, 0, 0) 90%
+        );
 }
 
 .card {
   border-radius: 10px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
   width: 400px;
-  height: 400px;
+  height: auto;
   background-color: #ffffff;
   padding: 10px 30px;
+  margin-top:8%;
+  
 }
 
 .card_title {
@@ -59,7 +61,7 @@
 }
 
 .form button {
-  background-color: #4796ff;
+  background-color: #a80000;
   color: #ffffff;
   font-size: 16px;
   outline: none;
@@ -97,7 +99,7 @@
       <div class="card">
         <div class="card_title">
           <h1>Create Account</h1>
-          <span>Already have an account? <a href="login">Sign In</a></span>
+          <!-- <span>Already have an account? <a href="login">Sign In</a></span> -->
         </div>
         <div class="form">
         <form action="register" method="post">
